@@ -14,6 +14,9 @@
 
     docker push vdchirutkar/myprodapp:my_java_app-1.0
     
+##### Run new docker container using image from repo 
+    docker run vdchirutkar/myprodapp:my_java_app-1.0
+    
 
 ##############################
 
