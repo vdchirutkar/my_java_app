@@ -6,9 +6,13 @@
 
     docker build -t java-app .
     
+##### Tag image to push to the repo 
+
+    ocker tag java-app vdchirutkar/myprodapp:my_java_app-1.0
+    
 ##### push image to repo 
 
-    docker tag my_java_app discoverdevops/myprodapp:my_java_app-1.0
+    docker push vdchirutkar/myprodapp:my_java_app-1.0
     
 
 ##############################
