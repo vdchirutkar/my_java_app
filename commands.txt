@@ -1,0 +1,26 @@
+PS1="MyDocker $"
+pwd
+ls
+cd NewProject/
+git --version
+git init
+git clone https://github.com/vdchirutkar/my_java_app.git
+ls
+ll
+cd my_java_app/
+ls
+gradle -v
+apt  install gradle
+./gradlew build
+ls -lrt
+chmod 755 gradlew
+./gradlew build
+cat Dockerfile 
+docker build -t java-app .
+docker images
+docker login
+docker tag java-app vdchirutkar/myprodapp:my_java_app-1.0
+docker images
+docker push vdchirutkar/myprodapp:my_java_app-1.0
+docker system prune -a
+docker run vdchirutkar/myprodapp:my_java_app-1.0
